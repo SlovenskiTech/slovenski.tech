@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>LMS</title>
+    <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="../assets/code.css">
+
     <style>
-    * {
+    .main-content {
       font-family:Arial, Helvetica, sans-serif;
     }
     h3 {
       background-color: #EEEEEE;
       padding: 10px 10px;
       max-width: 75%;
+      border-left: solid 2px #0251ac;
     }
     h3:hover {
       background-color: #C1C1C1;
@@ -20,15 +24,25 @@
       padding: 0 20px;
       width: 20%;
     }
-    a:link {
+    .main-content a:link {
       text-decoration: none;
     }
-    a {
+    .main-content a {
       color: black;
     }
     </style>
   </head>
   <body>
+    <ul class="navbar">
+       <li class="navbar"><a href="../index.html" class="navbar">Domov</a></li>
+       <li class="navbar"><a href="../PotiDoSlike/index.html" class="navbar">PotiDoSlike</a></li>
+       <li class="navbar"><a href="../HyperLinki/index.html" class="navbar">HyperLinki</a></li>
+       <li class="navbar"><a href="../Seznami/index.html" class="navbar">Seznami</a></li>
+       <li class="navbar"><a href="../Začetek/index.html" class="navbar">Začetek</a></li
+    </ul>
+    <br>
+    <br>
+    <div class="main-content">
     <div align="left" class="logo">
       <a href="https://lms.digitalschool.tech/">
         <img src="logo.png" class="logo" >
@@ -95,5 +109,6 @@
         <li>Images in HTML</li>
       </ul>
   </ol>
+</div>
   </body>
 </html>
