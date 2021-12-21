@@ -16,6 +16,31 @@
           font-family: 'Dancing Script', cursive;
           font-size: 10vh;
         }
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
       </style>
    </head>
    <body>
@@ -76,11 +101,13 @@
                </div>
             </div>
          </div>
-      </div>
+         <img src="smrekica.png" style="max-width:300px;">
+       </div>
+    <input type="button" class="gumb" value="Klikni me" onclick="play()" style="-webkit-text-stroke: 1px black;
+  ">
+    <audio id="audio" src="merry-christmas-you-filthy-animal-and-a-happy-new-year.mp3"></audio>
       <script src="script.js"></script>
-      <br>
-      <input type="button" class="gumb" value="Klikni me" onclick="play()">
-      <audio id="audio" src="merry-christmas-you-filthy-animal-and-a-happy-new-year.mp3"></audio>
+
       <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">
         ❅

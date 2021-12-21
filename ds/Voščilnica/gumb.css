@@ -7,12 +7,11 @@
   color: white;
 /*  width: 30%;
   height: 5%;*/
-  width: 300px;
+  width: 200px;
   height: 60px;
   font-size: 2em;
   opacity: .7;
-  top: 30vh;
-  bottom: 0px;
+  bottom: 5vh;
   left: 0px;
   right: 0px;
   margin: auto;
