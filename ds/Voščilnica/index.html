@@ -6,6 +6,7 @@
       <title>Voščilnica</title>
       <link rel="stylesheet" href="counter.css">
       <link rel="stylesheet" href="snowflakes.css">
+      <link rel="stylesheet" href="gumb.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,36 +15,6 @@
         span {
           font-family: 'Dancing Script', cursive;
           font-size: 10vh;
-        }
-        .gumb{
-          position: absolute;
-          border: 2px solid white;
-          background: transparent;
-          font-family: 'Roboto', sans-serif;
-          color: white;
-        /*  width: 30%;
-          height: 5%;*/
-          width: 300px;
-          height: 60px;
-          font-size: 2em;
-          border-radius: 5px;
-          opacity: .7;
-          top: 30vh;
-          bottom: 0px;
-          left: 0px;
-          right: 0px;
-          margin: auto;
-          transition: .3s;
-        }
-
-        .gumb:hover{
-          border: 2px solid #104F55;
-          background-color: rgba(365,365,365,0.5);
-          cursor: pointer;
-          color: #104F55;
-          transition: .3s;
-          opacity: .9;
-          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
       </style>
    </head>
@@ -106,15 +77,10 @@
             </div>
          </div>
       </div>
-      <script>
-  function play() {
-    var audio = document.getElementById("audio");
-    audio.play();
-  }
-</script>
-
-<input type="button" class="gumb" value="Klikni me" onclick="play()">
-<audio id="audio" src="https://movie-sounds.org/quotes/177/merry-christmas-you-filthy-animal-and-a-happy-new-year.mp3"></audio>
+      <script src="script.js"></script>
+      <br>
+      <input type="button" class="gumb" value="Klikni me" onclick="play()">
+      <audio id="audio" src="merry-christmas-you-filthy-animal-and-a-happy-new-year.mp3"></audio>
       <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">
         ❅
@@ -148,38 +114,7 @@
         </div>
       </div>
       <script>
-         const day = document.querySelector(".day .numb");
-         const hour = document.querySelector(".hour .numb");
-         const min = document.querySelector(".min .numb");
-         const sec = document.querySelector(".sec .numb");
-         var timer = setInterval(()=>{
-           var currentDate = new Date().getTime();
-           var launchDate = new Date('Dec 25, 2021 00:00:00').getTime();
-           var duration = launchDate - currentDate;
-           var days = Math.floor(duration / (1000 * 60 * 60 * 24));
-           var hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-           var minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
-           var seconds = Math.floor((duration % (1000 * 60)) / 1000);
-           day.innerHTML = days;
-           hour.innerHTML = hours;
-           min.innerHTML = minutes;
-           sec.innerHTML = seconds;
-           if(days < 10){
-             day.innerHTML = '0' + days;
-           }
-           if(hours < 10){
-             hour.innerHTML = '0' + hours;
-           }
-           if(minutes < 10){
-             min.innerHTML = '0' + minutes;
-           }
-           if(seconds < 10){
-             sec.innerHTML = '0' + seconds;
-           }
-           if(duration < 0){
-             clearInterval(timer);
-           }
-         }, 1000);
+
       </script>
    </body>
 </html>
