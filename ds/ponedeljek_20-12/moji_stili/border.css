@@ -1,5 +1,5 @@
 html {
-  background-color: lightgray;
+/*  background-color: lightgray; */
 }
 h1 {
   border: 5px solid white;
@@ -23,4 +23,9 @@ img {
   border-bottom: 5px red;
   border-left: 5px lightgray;
   border-style: dotted solid double dashed;
+}
+
+div {
+  padding: 10px;
+  background-color: lightgray;
 }

@@ -32,4 +32,10 @@ info@slovenski.tech ali SlovenianGamer#0498
     - a href
     - img
     - button
-    - 
+    - link
+
+# HTML framework
+    - html
+    - head
+    - body
+    - style
