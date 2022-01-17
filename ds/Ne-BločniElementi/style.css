@@ -16,8 +16,8 @@ span.li1 {
 #tabela {
   border: solid black 1px;
   /* padding: 6px 2px; */
-  /* width: 251.6px;
-  height: 83px; */
+  width: 200px;
+  height: 83px;
 }
 
 span.elementTabele {
@@ -56,4 +56,12 @@ code {
   border-radius: 2px;
   padding: 2px 6px;
   font-family: monospace;
+}
+
+#subscript {
+  vertical-align: sub;
+  font-size: smaller;
+}
+#mark {
+  background-color: yellow;
 }

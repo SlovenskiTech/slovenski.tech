@@ -210,7 +210,7 @@ button:focus{
   font-size: 2em;
 }
 
-#head1, #head2,#head3, #head4, #head5{
+#head1, #head2,#head3, #head4, #head5, #head6{
   opacity: 0;
 }
 
@@ -255,10 +255,10 @@ button:focus{
 }
 
 #head5{
-  -webkit-animation: finalFade 1 5s ease-in;
-  -moz-animation: finalFade 1 5s ease-in;
-  -o-animation: finalFade 1 5s ease-in;
-  animation: finalFade 1 5s ease-in;
+  -webkit-animation: fadeOut 1 5s ease-in;
+  -moz-animation: fadeOut 1 5s ease-in;
+  -o-animation: fadeOut 1 5s ease-in;
+  animation: fadeOut 1 5s ease-in;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
@@ -267,6 +267,21 @@ button:focus{
   -moz-animation-delay: 22s;
   -o-animation-delay: 22s;
   animation-delay: 22s;
+}
+
+#head6{
+  -webkit-animation: finalFade 1 5s ease-in;
+  -moz-animation: finalFade 1 5s ease-in;
+  -o-animation: finalFade 1 5s ease-in;
+  animation: finalFade 1 5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 27s;
+  -moz-animation-delay: 27s;
+  -o-animation-delay: 27s;
+  animation-delay: 27s;
 }
 
 @-webkit-keyframes fadeIn{
