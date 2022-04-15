@@ -25,7 +25,6 @@
           a:hover {
             text-decoration: underline;
           }
-
           /* Create two equal columns that floats next to each other */
           .projekt {
             float: left;
@@ -45,12 +44,17 @@
             display: table;
             clear: both;
           }
-
           /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
           @media screen and (max-width: 600px) {
             .projekt {
               width: 100%;
             }
+          }
+          .copyright, .copyright a{
+            color: rgb(255,255,255, 0.3);
+          }
+          .copyright {
+            float: right;
           }
     </style>
 </head>
@@ -172,12 +176,9 @@
         <small>21.3.2022</small>
       </div>
     </div>
-
-
-
-
-
-
 </div>
+<footer>
+<span class="copyright">Slika iz <a href="https://en.wikipedia.org/wiki/Bled#/media/File:Bled_Overview.jpg">Wikipedie</a>
+</footer>
 </body>
 </html>
