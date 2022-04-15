@@ -34,9 +34,27 @@ info@slovenski.tech ali SlovenianGamer#0498
     - img
     - button
     - link
+    - small
+    - span
+    - hr
+    - br
+    - i
+    - b
+    - caption
+    - table, tr, th, tr
+    - code
+    - iframe
+    - audio
+    - video
 
 # HTML framework
     - html
     - head
     - body
     - style
+    - header
+    - nav
+    - aside
+    - section
+    - article
+    - footer

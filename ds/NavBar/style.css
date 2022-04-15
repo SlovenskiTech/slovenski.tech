@@ -26,3 +26,10 @@ li a:hover {
 .active {
   background-color: green;
 }
+img {
+  transition: 1s ease;
+}
+img:hover {
+  width: 100px;
+  transition: 1s ease;
+}
